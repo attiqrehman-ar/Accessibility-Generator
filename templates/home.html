@@ -1,0 +1,86 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="app-header">
+    <h1>Hi! Welcome to <span class="text-purple">Accessibility</span> <span class="text-pink">Generator</span></h1>
+    <div class="plan-badge">Free Classic Plan</div>
+</div>
+
+<div class="steps-container">
+    <!-- Step 1 -->
+    <div class="step-section">
+        <div class="step-header">
+            <span class="step-badge">Step 1</span>
+        </div>
+        <div class="step-content">
+            <div class="accessibility-icon">
+                <i class="fas fa-universal-access"></i>
+            </div>
+            <h2>Generate Free Accessibility Statement</h2>
+            <p>Generate your custom accessibility statement to highlight your commitment to ADA compliance and then add it to your navigation.</p>
+            <button class="generate-btn" onclick="generateStatement()">Generate Statement</button>
+        </div>
+    </div>
+
+    <!-- Step 2 -->
+    <div class="step-section">
+        <div class="step-header">
+            <span class="step-badge">Step 2</span>
+        </div>
+        <div class="step-content">
+            <h2>Discover how our app makes your website accessible!</h2>
+            <div class="video-container">
+                <!-- Placeholder for video embed -->
+                <div class="video-placeholder">
+                    <i class="fas fa-play-circle"></i>
+                    <span>Watch Tutorial</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Step 3 -->
+    <div class="step-section">
+        <div class="step-header">
+            <span class="step-badge">Step 3</span>
+        </div>
+        <div class="step-content">
+            <h2>Book a free call to fix accessibility on your website at the code level</h2>
+            <div class="calendly-inline-widget" data-url="https://calendly.com/your-calendar-url"></div>
+        </div>
+    </div>
+
+    <!-- Support Section -->
+    <div class="support-section">
+        <h2>Support Channel</h2>
+        <div class="support-grid">
+            <div class="support-card">
+                <i class="fas fa-phone-alt"></i>
+                <h3>Book a call</h3>
+                <p>Book a call to ensure your project meets accessibility standards with our specialized services.</p>
+            </div>
+            <div class="support-card">
+                <i class="fas fa-envelope"></i>
+                <h3>Support</h3>
+                <p>Email: sales@ecomback.com<br>Call: 1-818-839-8888</p>
+            </div>
+            <div class="support-card">
+                <i class="fas fa-question-circle"></i>
+                <h3>Help Center</h3>
+                <p>Explore our Help Center for detailed guides and instructions.</p>
+            </div>
+        </div>
+
+        <!-- FAQ Section -->
+        <div class="faq-section">
+            <div class="faq-item">
+                <h3>What is an ADA-Compliant website?</h3>
+                <div class="faq-content">
+                    <!-- Content will be shown/hidden via JavaScript -->
+                </div>
+            </div>
+            <!-- Add more FAQ items as needed -->
+        </div>
+    </div>
+</div>
+{% endblock %}
