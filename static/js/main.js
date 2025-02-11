@@ -1,7 +1,7 @@
 // Initialize Calendly widget
 function initCalendly() {
     Calendly.initInlineWidget({
-        url: 'https://calendly.com/your-calendar-url',
+        url: 'https://calendly.com/your-calendar-url/free-ada-audit-45min',
         parentElement: document.querySelector('.calendly-inline-widget'),
         prefill: {},
         utm: {}

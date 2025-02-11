@@ -178,3 +178,67 @@ body {
     color: var(--shopify-blue);
     margin-bottom: 12px;
 }
+
+/* Add these styles to the existing CSS file */
+
+.calendly-section {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.ecomback-branding {
+    padding: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.ecomback-logo {
+    max-width: 200px;
+    height: auto;
+}
+
+.meeting-details {
+    padding: 20px;
+}
+
+.meeting-details h3 {
+    color: #1a1a1a;
+    margin: 0 0 15px 0;
+    font-size: 1.25rem;
+}
+
+.meeting-meta {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.meeting-meta div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.meeting-meta i {
+    margin-right: 8px;
+    width: 16px;
+}
+
+.calendly-inline-widget {
+    min-width: 320px;
+    height: 600px;
+    border-top: 1px solid #eee;
+}
+
+/* Corner ribbon */
+.currently-open {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    padding: 5px 10px;
+    background: #2d3748;
+    color: white;
+    font-size: 0.8rem;
+    border-radius: 4px;
+    transform: rotate(0deg);
+}
