@@ -3,30 +3,39 @@
 
 {% block content %}
 <div class="form-container">
-    <div class="header-content">
-        <h1>Generate Accessibility Statement</h1>
-        <div class="plan-badge">Free Classic Plan</div>
-    </div>
+    <h1>Generate Accessibility Statement</h1>
     {% if statement and statement.generated %}
         <div class="statement-status">
-            <span class="generated-badge">Generated</span>
-            <button onclick="viewStatement()" class="view-btn">View</button>
+            <div class="status-header">
+                <span>Accessibility Statement page</span>
+                <div class="status-actions">
+                    <span class="generated-badge">Generated</span>
+                    <button onclick="viewStatement()" class="view-btn">View</button>
+                </div>
+            </div>
         </div>
         <div id="statement-preview" style="display: none;">
             {{ statement.html | safe }}
         </div>
-        <div class="instructions">
-            <h3>How to add to your Shopify store:</h3>
-            <ol>
-                <li>Copy the generated HTML code</li>
-                <li>In your Shopify admin, go to Online Store > Pages</li>
-                <li>Create a new page titled "Accessibility Statement"</li>
-                <li>Paste the HTML code into the content editor</li>
-                <li>Save and publish the page</li>
-                <li>Add the page to your navigation menu</li>
-            </ol>
-        </div>
     {% endif %}
+
+    <div class="instructions-section">
+        <p>Once you submit this form, a page will be generated and you need to add it to your navigation.</p>
+        
+        <div class="steps-list">
+            <div class="step">
+                <strong>Step 1:</strong> Review Accessibility Statement and make any corrections
+            </div>
+            <div class="step">
+                <strong>Step 2:</strong> Add it to your navigation <a href="#" class="watch-video">Watch Video Instructions</a>
+            </div>
+            <div class="step">
+                <strong>Step 3:</strong> <a href="#" class="book-call">Book a call</a> with our accessibility experts to review accessibility issues on your website
+            </div>
+        </div>
+    </div>
+
+    {% if not statement or not statement.generated %}
     <form method="POST" action="{{ url_for('generate_statement') }}">
         <div class="form-group">
             <label for="store_name">Store Name:</label>
@@ -42,12 +51,16 @@
         </div>
         <button type="submit" class="generate-btn">Generate Statement</button>
     </form>
-</div>
+    {% endif %}
 
-{% if statement %}
-<div class="statement-preview">
-    <h2>Your Accessibility Statement</h2>
-    {{ statement | safe }}
+    <div class="compliance-banner">
+        <h2>Expert ADA and WCAG Compliance Services for Your Website</h2>
+        <p>We manually audit, fix and certify website accessibility at the code level</p>
+        <div class="certification-badges">
+            <img src="{{ url_for('static', filename='images/iaap-badge.png') }}" alt="IAAP Badge" class="cert-badge">
+            <img src="{{ url_for('static', filename='images/w3c-badge.png') }}" alt="W3C Badge" class="cert-badge">
+            <img src="{{ url_for('static', filename='images/court-badge.png') }}" alt="Court Approved Badge" class="cert-badge">
+        </div>
+    </div>
 </div>
-{% endif %}
 {% endblock %}
