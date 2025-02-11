@@ -7,6 +7,26 @@
         <h1>Generate Accessibility Statement</h1>
         <div class="plan-badge">Free Classic Plan</div>
     </div>
+    {% if statement and statement.generated %}
+        <div class="statement-status">
+            <span class="generated-badge">Generated</span>
+            <button onclick="viewStatement()" class="view-btn">View</button>
+        </div>
+        <div id="statement-preview" style="display: none;">
+            {{ statement.html | safe }}
+        </div>
+        <div class="instructions">
+            <h3>How to add to your Shopify store:</h3>
+            <ol>
+                <li>Copy the generated HTML code</li>
+                <li>In your Shopify admin, go to Online Store > Pages</li>
+                <li>Create a new page titled "Accessibility Statement"</li>
+                <li>Paste the HTML code into the content editor</li>
+                <li>Save and publish the page</li>
+                <li>Add the page to your navigation menu</li>
+            </ol>
+        </div>
+    {% endif %}
     <form method="POST" action="{{ url_for('generate_statement') }}">
         <div class="form-group">
             <label for="store_name">Store Name:</label>

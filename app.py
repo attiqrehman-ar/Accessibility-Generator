@@ -20,19 +20,22 @@ def generate_statement():
         phone = request.form.get('phone')
         
         # Generate statement using the template
-        statement = f'''<p><strong>{store_name}</strong> is committed to providing an inclusive and accessible experience to everyone, including those with disabilities.</p>
-        <p>Our commitment is guided by our accessibility policy to ensure that people with disabilities have full and equal opportunity to access and benefit from its products and information provided on the website using the Web Content Accessibility Guidelines (WCAG) version 2.2 AA.</p>
-        <h2>Support / Feedback</h2>
-        <p>How can we provide support and improve accessibility?</p>
-        <p>We welcome your questions and feedback on the accessibility of our website. Please let us know how we can assist you if you encounter any barriers to access:</p>
-        <ul>
-            <li>Email: <a href="mailto:{email}">{email}</a> with subject line: <strong>Accessibility Support</strong></li>
-            <li>Accessibility Support Phone: <a href="tel:{phone}">{phone}</a></li>
-        </ul>'''
+        statement = {
+            'html': f'''<p><strong>{store_name}</strong> is committed to providing an inclusive and accessible experience to everyone, including those with disabilities.</p>
+            <p>Our commitment is guided by our accessibility policy to ensure that people with disabilities have full and equal opportunity to access and benefit from its products and information provided on the website using the Web Content Accessibility Guidelines (WCAG) version 2.2 AA.</p>
+            <h2>Support / Feedback</h2>
+            <p>How can we provide support and improve accessibility?</p>
+            <p>We welcome your questions and feedback on the accessibility of our website. Please let us know how we can assist you if you encounter any barriers to access:</p>
+            <ul>
+                <li>Email: <a href="mailto:{email}">{email}</a> with subject line: <strong>Accessibility Support</strong></li>
+                <li>Accessibility Support Phone: <a href="tel:{phone}">{phone}</a></li>
+            </ul>''',
+            'generated': True
+        }
         
         return render_template('generate_statement.html', statement=statement)
     
-    return render_template('generate_statement.html')
+    return render_template('generate_statement.html', statement={'generated': False})
 
 @app.route('/book-call')
 def book_call():

@@ -13,6 +13,12 @@ function generateStatement() {
     window.location.href = '/generate-statement';
 }
 
+// View generated statement
+function viewStatement() {
+    const preview = document.getElementById('statement-preview');
+    preview.style.display = preview.style.display === 'none' ? 'block' : 'none';
+}
+
 // FAQ accordion functionality
 document.addEventListener('DOMContentLoaded', function() {
     const faqItems = document.querySelectorAll('.faq-item h3');
