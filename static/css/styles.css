@@ -60,6 +60,13 @@ body {
     margin-bottom: 24px;
 }
 
+.step-content {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+}
+
+
 .step-badge {
     background-color: var(--shopify-blue);
     color: white;
@@ -240,6 +247,17 @@ body {
     .calendly-inline-widget {
         height: 600px;
     }
+    .checklist-icon {
+        width: 50px;
+    }
+
+    .statement-title {
+        font-size: 20px;
+    }
+
+    .statement-description {
+        font-size: 14px;
+    }
 }
 
 /* Support Section */
@@ -286,13 +304,14 @@ body {
 }
 
 .generate-btn {
-    background-color: var(--shopify-blue);
+    background-color: #008060;
     color: white;
     border: none;
     padding: 12px 24px;
     border-radius: 4px;
     cursor: pointer;
     font-size: 16px;
+    transition: background-color 0.3s ease;
 }
 
 .generate-btn:hover {
@@ -310,28 +329,24 @@ body {
 }
 
 .checklist-icon {
-    width: 80px;
+    width: 60px;
     height: auto;
     margin: 0 auto;
+    display: block;
 }
 
 .statement-title {
     color: #d92020;
     font-size: 24px;
     margin-bottom: 16px;
+    text-align: center;
 }
 
 .statement-description {
     color: #202223;
     margin-bottom: 24px;
     line-height: 1.5;
-}
-
-.discover-title {
-    color: #d92020;
-    font-size: 24px;
     text-align: center;
-    margin-bottom: 24px;
 }
 
 .generate-btn {
@@ -343,6 +358,8 @@ body {
     cursor: pointer;
     font-size: 16px;
     transition: background-color 0.3s ease;
+    display: block;
+    margin: 0 auto;
 }
 
 .generate-btn:hover {
@@ -360,6 +377,6 @@ body {
     }
 
     .checklist-icon {
-        width: 60px;
+        width: 50px;
     }
 }
