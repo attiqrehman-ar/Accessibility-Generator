@@ -17,12 +17,12 @@
             <div class="step-header">
                 <span class="step-badge">Step 1</span>
             </div>
-            <div class="step-content">
-                <div class="accessibility-icon">
-                    <img src="{{ url_for('static', filename='images/accessibility-checklist.png') }}" alt="Accessibility Checklist" class="checklist-icon">
+            <div class="step-content text-center">
+                <div class="checklist-icon-container">
+                    <img src="{{ url_for('static', filename='images/checklist-icon.png') }}" alt="Accessibility Checklist" class="checklist-icon">
                 </div>
-                <h2>Generate Free Accessibility Statement</h2>
-                <p>Generate your custom accessibility statement to highlight your commitment to ADA compliance and then add it to your navigation.</p>
+                <h2 class="statement-title">Generate Free Accessibility Statement</h2>
+                <p class="statement-description">Generate your custom accessibility statement to highlight your commitment to ADA compliance and then add it to your navigation.</p>
                 <button class="generate-btn" onclick="generateStatement()">Generate Statement</button>
             </div>
         </div>
@@ -33,7 +33,7 @@
                 <span class="step-badge">Step 2</span>
             </div>
             <div class="step-content">
-                <h2>Discover how our app makes your website accessible!</h2>
+                <h2 class="discover-title">Discover how our app makes your website accessible!</h2>
                 <div class="video-container">
                     <video 
                         width="100%" 
