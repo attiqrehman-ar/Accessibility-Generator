@@ -1,0 +1,30 @@
+
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="form-container">
+    <h1>Generate Accessibility Statement</h1>
+    <form method="POST" action="{{ url_for('generate_statement') }}">
+        <div class="form-group">
+            <label for="store_name">Store Name:</label>
+            <input type="text" id="store_name" name="store_name" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+        </div>
+        <button type="submit" class="generate-btn">Generate Statement</button>
+    </form>
+</div>
+
+{% if statement %}
+<div class="statement-preview">
+    <h2>Your Accessibility Statement</h2>
+    {{ statement | safe }}
+</div>
+{% endif %}
+{% endblock %}
