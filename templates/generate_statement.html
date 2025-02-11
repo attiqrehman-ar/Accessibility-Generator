@@ -1,31 +1,33 @@
-
 {% extends 'base.html' %}
 
 {% block content %}
 <div class="form-container">
-    <h1>Generate Accessibility Statement</h1>
-    
-    <div class="statement-status">
-        <div class="status-header">
-            <span>Accessibility Statement page</span>
-            <div class="status-actions">
-                {% if statement and statement.generated %}
-                <span class="generated-badge">Generated</span>
-                <button onclick="viewStatement()" class="view-btn">View</button>
-                {% endif %}
-            </div>
-        </div>
+    <div class="header-content">
+        <h1>Generate Accessibility Statement</h1>
+        <span class="plan-badge">Free Classic Plan</span>
     </div>
 
-    {% if statement and statement.generated %}
-    <div id="statement-preview" style="display: none;">
-        {{ statement.html | safe }}
-    </div>
-    {% endif %}
+    <form method="POST" action="{{ url_for('generate_statement') }}">
+        <div class="form-row">
+            <div class="form-group">
+                <label for="store_name">Company Name</label>
+                <input type="text" id="store_name" name="store_name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Company Support Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Company Support Phone (Optional)</label>
+                <input type="tel" id="phone" name="phone">
+            </div>
+        </div>
+        <button type="submit" class="generate-btn">Generate Accessibility Statement</button>
+    </form>
 
     <div class="instructions-section">
         <p>Once you submit this form, a page will be generated and you need to add it to your navigation.</p>
-        
+
         <div class="steps-list">
             <div class="step">
                 <strong>Step 1:</strong> Review Accessibility Statement and make any corrections
@@ -38,24 +40,6 @@
             </div>
         </div>
     </div>
-
-    {% if not statement or not statement.generated %}
-    <form method="POST" action="{{ url_for('generate_statement') }}">
-        <div class="form-group">
-            <label for="store_name">Store Name:</label>
-            <input type="text" id="store_name" name="store_name" required>
-        </div>
-        <div class="form-group">
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-        </div>
-        <div class="form-group">
-            <label for="phone">Phone Number:</label>
-            <input type="tel" id="phone" name="phone" required>
-        </div>
-        <button type="submit" class="generate-btn">Generate Statement</button>
-    </form>
-    {% endif %}
 
     <div class="compliance-banner">
         <h2>Expert ADA and WCAG Compliance Services for Your Website</h2>
