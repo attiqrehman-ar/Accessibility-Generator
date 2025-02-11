@@ -64,5 +64,43 @@
             </div>
         </div>
     </div>
+
+    <!-- Quick Tutorials Section -->
+    <div class="quick-tutorials">
+        <h2 class="section-title">Quick Tutorials</h2>
+        <div class="tutorials-grid">
+            <!-- Tutorial 1 - Image Side -->
+            <div class="tutorial-card">
+                <div class="app-works-image">
+                    <h3>Discover how our</h3>
+                    <div class="app-text">
+                        <span class="text-red">APP</span>
+                        <span class="text-turquoise">WORKS</span>
+                    </div>
+                    <p class="subtitle">and what you need to do.</p>
+                    <div class="accessibility-icons">
+                        <img src="{{ url_for('static', filename='images/app-works.png') }}" alt="App Works Illustration" class="tutorial-image">
+                    </div>
+                </div>
+                <p class="tutorial-description">Follow our video tutorial and step-by-step instructions to easily submit your website for an audit.</p>
+            </div>
+
+            <!-- Tutorial 2 - Video Side -->
+            <div class="tutorial-card">
+                <div class="video-container">
+                    <video 
+                        width="100%" 
+                        height="auto" 
+                        controls
+                        playsinline
+                        poster="https://ecomeback.cpos.pk/assets/uploads/how-app-work2.png"
+                        class="tutorial-video">
+                        <source src="https://www.ecomback.com/wp-content/uploads/Ecomback_Homepage_Video_without_audio_compressed.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 {% endblock %}

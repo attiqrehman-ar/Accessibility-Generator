@@ -66,7 +66,6 @@ body {
     border-radius: 8px;
 }
 
-
 .step-badge {
     background-color: var(--shopify-blue);
     color: white;
@@ -135,7 +134,6 @@ body {
     flex: 1;
     padding: 20px;
 }
-
 
 /* Video Container */
 .video-container {
@@ -378,5 +376,103 @@ body {
 
     .checklist-icon {
         width: 50px;
+    }
+}
+
+/* Quick Tutorials Section */
+.quick-tutorials {
+    margin-top: 40px;
+    padding: 0 20px;
+}
+
+.section-title {
+    font-size: 24px;
+    color: var(--shopify-text);
+    margin-bottom: 24px;
+}
+
+.tutorials-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.tutorial-card {
+    background-color: white;
+    border-radius: 8px;
+    padding: 24px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.app-works-image {
+    text-align: left;
+    padding: 20px 0;
+}
+
+.app-works-image h3 {
+    font-size: 28px;
+    color: #1a1a1a;
+    margin: 0;
+    font-weight: 600;
+}
+
+.app-text {
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 1.2;
+    margin: 10px 0;
+}
+
+.text-red {
+    color: #d92020;
+}
+
+.text-turquoise {
+    color: #17a2b8;
+}
+
+.subtitle {
+    font-size: 24px;
+    color: #1a1a1a;
+    margin: 10px 0 30px;
+}
+
+.tutorial-description {
+    color: #6b7177;
+    margin: 20px 0;
+    line-height: 1.5;
+    font-size: 16px;
+}
+
+.accessibility-icons {
+    margin-top: 30px;
+}
+
+.tutorial-image {
+    max-width: 100%;
+    height: auto;
+}
+
+.tutorial-video {
+    border-radius: 8px;
+    width: 100%;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .tutorials-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .tutorial-card {
+        padding: 16px;
+    }
+
+    .app-text {
+        font-size: 36px;
+    }
+
+    .subtitle {
+        font-size: 20px;
     }
 }
