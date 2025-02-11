@@ -408,6 +408,101 @@ body {
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
+.form-container h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.statement-status {
+    background: #f9fafb;
+    border: 1px solid #e5e7eb;
+    border-radius: 6px;
+    padding: 15px 20px;
+    margin-bottom: 30px;
+}
+
+.status-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.status-header span {
+    color: #374151;
+    font-weight: 500;
+}
+
+.generated-badge {
+    background: #dcfce7;
+    color: #166534;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 14px;
+    margin-right: 10px;
+}
+
+.view-btn {
+    background: white;
+    border: 1px solid #d1d5db;
+    color: #374151;
+    padding: 4px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.instructions-section {
+    margin: 30px 0;
+}
+
+.steps-list {
+    margin-top: 20px;
+}
+
+.step {
+    margin-bottom: 15px;
+    color: #374151;
+}
+
+.watch-video, .book-call {
+    color: #2563eb;
+    text-decoration: none;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #374151;
+    font-weight: 500;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 8px 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.generate-btn {
+    background: #008060;
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 12px;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.generate-btn:hover {
+    background: #006e52;
+}
+
 .statement-status {
     background: #f9fafb;
     border: 1px solid #e5e7eb;

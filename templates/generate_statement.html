@@ -4,19 +4,23 @@
 {% block content %}
 <div class="form-container">
     <h1>Generate Accessibility Statement</h1>
-    {% if statement and statement.generated %}
-        <div class="statement-status">
-            <div class="status-header">
-                <span>Accessibility Statement page</span>
-                <div class="status-actions">
-                    <span class="generated-badge">Generated</span>
-                    <button onclick="viewStatement()" class="view-btn">View</button>
-                </div>
+    
+    <div class="statement-status">
+        <div class="status-header">
+            <span>Accessibility Statement page</span>
+            <div class="status-actions">
+                {% if statement and statement.generated %}
+                <span class="generated-badge">Generated</span>
+                <button onclick="viewStatement()" class="view-btn">View</button>
+                {% endif %}
             </div>
         </div>
-        <div id="statement-preview" style="display: none;">
-            {{ statement.html | safe }}
-        </div>
+    </div>
+
+    {% if statement and statement.generated %}
+    <div id="statement-preview" style="display: none;">
+        {{ statement.html | safe }}
+    </div>
     {% endif %}
 
     <div class="instructions-section">
