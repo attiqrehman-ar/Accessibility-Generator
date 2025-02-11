@@ -1,3 +1,4 @@
+
 from flask import Flask, render_template, jsonify, request
 import logging
 
@@ -32,14 +33,6 @@ def generate_statement():
         return render_template('generate_statement.html', statement=statement)
     
     return render_template('generate_statement.html')
-
-@app.route('/generate-statement', methods=['POST'])
-def generate_statement():
-    # Placeholder for statement generation logic
-    return jsonify({
-        'status': 'success',
-        'statement': 'Your accessibility statement will appear here.'
-    })
 
 @app.route('/book-call')
 def book_call():
