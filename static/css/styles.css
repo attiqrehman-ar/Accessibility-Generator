@@ -476,3 +476,59 @@ body {
         font-size: 20px;
     }
 }
+
+/* Compliance Banner */
+.compliance-banner {
+    background-color: #002B5C;
+    color: white;
+    padding: 30px 20px;
+    margin: 40px 0;
+}
+
+.banner-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.banner-text h2 {
+    font-size: 28px;
+    margin: 0 0 15px 0;
+    font-weight: 600;
+}
+
+.banner-text p {
+    font-size: 16px;
+    margin: 0 0 20px 0;
+    opacity: 0.9;
+}
+
+.certification-badges {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+}
+
+.cert-badge {
+    height: 60px;
+    width: auto;
+}
+
+@media (max-width: 768px) {
+    .banner-text h2 {
+        font-size: 22px;
+    }
+
+    .banner-text p {
+        font-size: 14px;
+    }
+
+    .certification-badges {
+        gap: 15px;
+    }
+
+    .cert-badge {
+        height: 45px;
+    }
+}
