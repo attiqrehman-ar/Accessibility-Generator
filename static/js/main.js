@@ -10,22 +10,7 @@ function initCalendly() {
 
 // Generate accessibility statement
 function generateStatement() {
-    fetch('/generate-statement', {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json',
-        }
-    })
-    .then(response => response.json())
-    .then(data => {
-        if (data.status === 'success') {
-            alert('Statement generated successfully!');
-        }
-    })
-    .catch(error => {
-        console.error('Error:', error);
-        alert('Failed to generate statement. Please try again.');
-    });
+    window.location.href = '/generate-statement';
 }
 
 // FAQ accordion functionality
