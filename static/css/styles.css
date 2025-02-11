@@ -273,6 +273,45 @@ body {
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
+/* Support Channel */
+.support-channel {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.support-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-bottom: 40px;
+}
+
+.support-item {
+    background: white;
+    padding: 24px;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.support-item h2 {
+    margin-top: 0;
+    color: #2d3748;
+}
+
+.book-call-btn {
+    background: #008060;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.book-call-btn:hover {
+    background: #006e52;
+}
+
 /* FAQ Section */
 .faq-section {
     margin-top: 40px;
