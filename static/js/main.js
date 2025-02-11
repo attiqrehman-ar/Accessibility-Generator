@@ -1,7 +1,7 @@
 // Initialize Calendly widget
 function initCalendly() {
     Calendly.initInlineWidget({
-        url: 'https://calendly.com/your-calendar-url/free-ada-audit-45min',
+        url: 'https://calendly.com/ecomback',
         parentElement: document.querySelector('.calendly-inline-widget'),
         prefill: {},
         utm: {}
@@ -19,7 +19,6 @@ function generateStatement() {
     .then(response => response.json())
     .then(data => {
         if (data.status === 'success') {
-            // Show success message or modal with the statement
             alert('Statement generated successfully!');
         }
     })
@@ -42,20 +41,19 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Initialize Calendly
     initCalendly();
-});
 
-// Handle video placeholder click
-document.querySelector('.video-placeholder')?.addEventListener('click', function() {
-    // Replace placeholder with actual video embed
-    const videoContainer = this.parentElement;
-    const videoEmbed = document.createElement('iframe');
-    videoEmbed.src = 'https://www.youtube-nocookie.com/embed/your-video-id';
-    videoEmbed.width = '100%';
-    videoEmbed.height = '100%';
-    videoEmbed.frameBorder = '0';
-    videoEmbed.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
-    videoEmbed.allowFullscreen = true;
-    
-    videoContainer.innerHTML = '';
-    videoContainer.appendChild(videoEmbed);
+    // Handle video placeholder click
+    document.querySelector('.video-placeholder')?.addEventListener('click', function() {
+        const videoContainer = this.parentElement;
+        const videoEmbed = document.createElement('iframe');
+        videoEmbed.src = 'https://www.youtube-nocookie.com/embed/your-video-id';
+        videoEmbed.width = '100%';
+        videoEmbed.height = '100%';
+        videoEmbed.frameBorder = '0';
+        videoEmbed.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
+        videoEmbed.allowFullscreen = true;
+
+        videoContainer.innerHTML = '';
+        videoContainer.appendChild(videoEmbed);
+    });
 });
