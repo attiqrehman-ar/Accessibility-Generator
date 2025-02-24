@@ -23,11 +23,11 @@ body {
 }
 
 .tutorial-card {
-    background-color: white;
-    border-radius: 8px;
-    padding: 20px;
-    width: calc(50% - 10px);
-    border: 1px solid #e0e0e0;
+    background-color: white !important;
+    border-radius: 8px !important;
+    padding: 20px !important;
+    width: calc(50% - 10px) !important;
+    border: 1px solid #e0e0e0 !important;
 }
 .tutorials-section {
     border-radius: 8px;
@@ -39,9 +39,33 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 .tutorial-cards {
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
+    display: flex !important;
+    gap: 20px !important;
+    flex-wrap: wrap !important;
+}
+.icon-heading img {
+    width: 30px;
+}
+.text-content {
+    margin: 15px 0;
+}
+.tutorial-card h3 {
+    font-size: 16px;
+    align-items: center;
+    line-height: 2;
+    color: #005bd3;
+    font-weight: 500;
+}
+.tutorial-card p {
+    font-size: 14px;
+    color: black;
+    font-weight: 400;
+    line-height: 1.5;
+    min-height: 80px;
+}
+.tutorial-image img {
+    width: 100%;
+    border-radius: 4px;
 }
 .app-container {
     display: flex;

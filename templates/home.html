@@ -87,22 +87,28 @@
             <!-- Tutorial 1 - Image Side -->
             <div class="tutorial-card">
                 <div class="icon-heading">
-                    <img src="{{ url_for('static', filename='images/discover-search-icon.svg') }}" alt="App Works Illustration" class="tutorial-image">
-
+                    <img src="{{ url_for('static', filename='images/discover-search-icon.svg') }}" alt="App Works Illustration" >
                     <h3>Discover how our app works and what you need to do.</h3>
-                    </div>
+                </div>
                     <div class="text-content">
                     <p >Follow our video tutorial and step-by-step intructions to easily submit your wesite for an audit.</p>
-                </div>
-                    <div class="accessibility-icons">
-                        <img src="{{ url_for('static', filename='images/how-app-work2.png') }}" alt="App Works Illustration" class="tutorial-image">
+                     </div>
+
+                    <div class="tutorial-image">
+                        <img src="{{ url_for('static', filename='images/how-app-work2.png') }}" alt="App Works Illustration" >
                     </div>
-                </div>
-                <p class="tutorial-description">Follow our video tutorial and step-by-step instructions to easily submit your website for an audit.</p>
+                
             </div>
 
             <!-- Tutorial 2 - Video Side -->
-            <div class="tutorial-card">
+            <div class="tutorial-card tutorial-card-2">
+                <div class="icon-heading">
+                    <img src="{{ url_for('static', filename='images/how-work-icon.svg') }}" alt="App Works Illustration" >
+                    <h3>Discover how to make your website accessible.                        </h3>
+                </div>
+                <div class="text-content">
+                    <p>Prevent and defend against accessibility website lawsuites. Let Ecomback audit, fix and certify your website with our ADA and WCAG compliance and certification program today.                        </p>
+                </div>
                 <div class="video-container">
                     <video 
                         width="100%" 
@@ -116,6 +122,7 @@
                     </video>
                 </div>
             </div>
+       </div>     
         </div>
     </div>
 </div>
