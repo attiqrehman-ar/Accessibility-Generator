@@ -148,7 +148,7 @@ body {
 }
 .highlight {
     background: linear-gradient(287deg, rgba(197, 22, 94, 1) 45%, rgba(87, 33, 126, 1) 65%);
-    -webkit-background-clip: text;
+    --webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     color: transparent;
     font-weight: bold;

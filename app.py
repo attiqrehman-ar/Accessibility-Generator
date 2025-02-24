@@ -39,4 +39,4 @@ def generate_statement():
 
 @app.route('/book-call')
 def book_call():
-    return render_template('home.html', active_section='book-call')
+    return render_template('book-call.html', active_section='book-call')

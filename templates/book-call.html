@@ -1,0 +1,162 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="app-header">
+    <div class="header-content">
+        <div class="welcome-message">
+            <h1>Book a Free Call and Submit Your Website for Accessibility Audit</h1>
+        </div>
+        <div class="language-select">Free Classic Plan</div>
+    </div>
+</div>
+
+
+
+    <!-- Compliance Services Banner -->
+    <div class="img-banner">
+        <!-- Banner Content -->
+        <div class="banner-content">
+            <h2>Expert ADA and WCAG Compliance Services for Your Website</h2>
+            <p>We manually audit, fix and certify website accessibility at the code level</p>
+        </div>
+
+        <!-- Banner Icons -->
+        <div class="banner-icons">
+            <!-- Icon 1 -->
+                            <div class="banner-icon">
+                <img src="{{ url_for('static', filename='images/iaap.svg') }}" alt="App Works Illustration" >
+
+            </div>
+            
+            <!-- Icon 2 -->
+                            <div class="banner-icon">
+                <img src="{{ url_for('static', filename='images/w3c_member.svg') }}" alt="App Works Illustration" >
+                
+            </div>
+            
+            <!-- Icon 3 -->
+                            <div class="banner-icon">
+                <img src="{{ url_for('static', filename='images/court_approved.svg') }}" alt="App Works Illustration" >
+
+            </div>
+                        </div>
+    </div>
+    <div class="step-section">
+       
+        <div class="step-content">
+            <h2 class="booking-title">Book a free call to fix accessibility on your website at the code level</h2>
+            <p class="booking-description">Submit your website for an accessibility audit. Our ADA experts will review the accessibility barriers on your website and discuss steps to fix them on a free call.</p>
+            <div class="calendly-section">
+                <!-- Calendly inline widget begin -->
+                <div class="calendly-inline-widget" data-url="https://calendly.com/ecomback"></div>
+                <!-- Calendly inline widget end -->
+            </div>
+        </div>
+    </div>
+    <!-- Quick Tutorials Section -->
+    <div class="tutorials-section ">
+        <h2 class="section-title">Quick Tutorials</h2>
+        <div class="tutorial-cards">
+            <!-- Tutorial 1 - Image Side -->
+            <div class="tutorial-card">
+                <div class="icon-heading">
+                    <img src="{{ url_for('static', filename='images/discover-search-icon.svg') }}" alt="App Works Illustration" >
+                    <h3>Discover how our app works and what you need to do.</h3>
+                </div>
+                    <div class="text-content">
+                    <p >Follow our video tutorial and step-by-step intructions to easily submit your wesite for an audit.</p>
+                     </div>
+
+                    <div class="tutorial-image">
+                        <img src="{{ url_for('static', filename='images/how-app-work2.png') }}" alt="App Works Illustration" >
+                    </div>
+                
+            </div>
+
+            <!-- Tutorial 2 - Video Side -->
+            <div class="tutorial-card tutorial-card-2">
+                <div class="icon-heading">
+                    <img src="{{ url_for('static', filename='images/how-work-icon.svg') }}" alt="App Works Illustration" >
+                    <h3>Discover how to make your website accessible.                        </h3>
+                </div>
+                <div class="text-content">
+                    <p>Prevent and defend against accessibility website lawsuites. Let Ecomback audit, fix and certify your website with our ADA and WCAG compliance and certification program today.                        </p>
+                </div>
+                <div class="video-container">
+                    <video 
+                        width="100%" 
+                        height="auto" 
+                        controls
+                        playsinline
+                        poster="https://ecomeback.cpos.pk/assets/uploads/how-app-work2.png"
+                        class="tutorial-video">
+                        <source src="https://www.ecomback.com/wp-content/uploads/Ecomback_Homepage_Video_without_audio_compressed.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+       </div>     
+        </div>
+    </div>
+</div> 
+
+<div class="support-section">
+    <h2>Support Channel</h2>
+    <div class="support-options">
+        <!-- Book a Call -->
+                        <div class="support-card">
+
+            <h3>
+                <img src="https://accessibilitygenerator.com/assets/images/bookacall.svg" alt="Icon" class="support-icon">
+                <a href="https://accessibilitygenerator.com/shop/accounts/book_call?session_token=15ishh62b3ohubraofjj5c1n8ea9nfef" class="link">Book a call</a>
+            </h3>
+
+            <p>
+                Book a call to ensure your project meets accessibility standards with our specialized services.                    </p>
+        </div>
+
+        <!-- Support -->
+                        <div class="support-card support-card-2">
+            <h3>
+                <img src="https://accessibilitygenerator.com/assets/images/email.svg" alt="Icon" class="support-icon">
+                Support
+            </h3>
+            <p>
+                Email: <a href="mailto:sales@ecomback.com" class="support-link">sales@ecomback.com</a><br>
+                Call: <a href="tel:1-818-839-8888" class="support-link">1-818-839-8888</a>
+            </p>
+        </div>
+        <!-- Help Center -->
+                        <div class="support-card">
+            <a href="https://www.ecomback.com/contact-us" target="_blank">
+                <h3>
+                    <img src="https://accessibilitygenerator.com/assets/images/help.svg" alt="Icon" class="support-icon">
+                    Help Center
+                </h3>
+            </a>
+            <p>Explore our Help Center for detailed guides and instructions.</p>
+        </div>
+    </div>
+
+    <!-- FAQ Section -->
+
+
+
+    <!--privacy policy-->
+    
+    <div class="terms-container">
+        <h2 class="terms-title">Read our terms of services and privacy policy</h2>
+        <p class="terms-description">
+            Read our terms of services and privacy policy By using Accessibility Generator, you are agreeing to our terms or services and privacy policy, as described on the page linked below.                </p>
+        <div class="terms-links">
+            <a href="https://www.ecomback.com/privacy-policy" target="_blank" class="terms-link">Privacy
+                policy &amp; terms of service</a>
+        </div>
+    </div>
+
+
+    <div class="main-app-version">
+        <p class="app-version">App Version 1.1.0</p>
+    </div>
+</div>
+{% endblock %}
