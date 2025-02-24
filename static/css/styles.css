@@ -21,6 +21,28 @@ body {
     align-items: center;
     gap: 10px;
 }
+
+.tutorial-card {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    width: calc(50% - 10px);
+    border: 1px solid #e0e0e0;
+}
+.tutorials-section {
+    border-radius: 8px;
+    margin-top: 15px;
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    flex: 1;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.tutorial-cards {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
 .app-container {
     display: flex;
     min-height: 100vh;
