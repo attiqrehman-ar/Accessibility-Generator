@@ -2,9 +2,27 @@
 
 {% block content %}
 <div class="form-container">
-    <div class="header-content">
-        <h1>Generate Accessibility Statement</h1>
-        <span class="plan-badge">Free Classic Plan</span>
+    <div class="row">
+        <div class="col-lg-12">
+                                                           
+
+            <div class="alerts-con"></div>
+        </div>
+    </div>
+    <div class="welcome-row">
+        <div class="welcome-message welcome-message-2">
+            <h1>Generate Accessibility Statement</h1>
+        </div>
+        <div class="language-notification">
+            <div class="language-container">
+                <div class="language-select">Free Classic Plan</div>
+            </div>
+
+            <!-- <div class="notification">
+            <span class="notification-icon"><i class="fa fa-bell" style="font-size:24px"></i></span>
+            <span class="notification-count">128</span>
+        </div> -->
+        </div>
     </div>
 
     <form method="POST" action="{{ url_for('generate_statement') }}">
