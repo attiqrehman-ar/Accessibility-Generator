@@ -186,7 +186,7 @@ body {
     width: 100%;
 }
 .banner-content p {
-    width: 95%;
+    width: 91%;
     background-color: white;
     color: #01027f;
     padding: 8px 10px;
@@ -299,6 +299,7 @@ a.support-link {
     padding: 8px 16px;
     border-radius: 4px;
 }
+
 
 /* Sidebar Styles */
 .sidebar {
