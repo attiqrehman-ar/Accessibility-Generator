@@ -1150,3 +1150,39 @@ a.support-link {
     font-size: 17pt;
     color: black;
 }
+.accessibi-container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 25px auto;
+    position: relative;
+}
+.form-row {
+        display: flex;
+        gap: 20px;
+        justify-content: space-between;
+}
+.form-group {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+.form-group label {
+    font-size: 14px;
+    color: black;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+#company-name, #support-email, #support-phone {
+    padding: 12px 15px;
+    font-size: 13px;
+}
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+}

@@ -24,7 +24,7 @@
         </div> -->
         </div>
     </div>
-
+<div class="accessibi-container">
     <form method="POST" action="{{ url_for('generate_statement') }}">
         <div class="form-row">
             <div class="form-group">
@@ -43,43 +43,16 @@
         <button type="submit" class="generate-btn">Generate Accessibility Statement</button>
     </form>
 
-    <div class="instructions-section">
-        <p>Once you submit this form, a page will be generated and you need to add it to your navigation.</p>
-
-        <div class="steps-list">
-            <div class="step">
-                <strong>Step 1:</strong> Review Accessibility Statement and make any corrections
-            </div>
-            <div class="step">
-                <strong>Step 2:</strong> Add to your Shopify store:
-                <ol class="shopify-instructions">
-                    <li>Go to your Shopify admin panel</li>
-                    <li>Navigate to Online Store → Pages</li>
-                    <li>Click "Add page"</li>
-                    <li>Title it "Accessibility Statement"</li>
-                    <li>Copy the generated HTML above and paste it into the content editor</li>
-                    <li>Click "Save"</li>
-                    <li>Go to Online Store → Navigation</li>
-                    <li>Edit your footer menu</li>
-                    <li>Add menu item and select the Accessibility Statement page</li>
-                    <li>Save the changes</li>
-                </ol>
-                <a href="#" class="watch-video">Watch Video Instructions</a>
-            </div>
-            <div class="step">
-                <strong>Step 3:</strong> <a href="#" class="book-call">Book a call</a> with our accessibility experts to review accessibility issues on your website
-            </div>
-        </div>
+    <div class="Accessibi-instructions">
+        <p class="Accessibi-instructions-1">Once you submit this form, a page will be generated and you need to
+            add it to your navigation.</p>
+        <p><b>Step 1:</b> Review Accessibility Statement and make any corrections</p>
+        <p><b>Step 2:</b> Add it to your navigation <button id="video-instruction" class="link">Watch Video
+                Instructions</button></p>
+        <p><b>Step 3:</b> <a href="https://accessibilitygenerator.com/shop/accounts/book_call?session_token=5pb68mg95ku4qm5na79j5d1abbcdn2ek" class="link"> Book a call</a> with our accessibility experts to review accessibility issues on
+            your website</p>
     </div>
-
-    <div class="compliance-banner">
-        <h2>Expert ADA and WCAG Compliance Services for Your Website</h2>
-        <p>We manually audit, fix and certify website accessibility at the code level</p>
-        <div class="certification-badges">
-            <img src="{{ url_for('static', filename='images/iaap-badge.png') }}" alt="IAAP Badge" class="cert-badge">
-            <img src="{{ url_for('static', filename='images/w3c-badge.png') }}" alt="W3C Badge" class="cert-badge">
-            <img src="{{ url_for('static', filename='images/court-badge.png') }}" alt="Court Approved Badge" class="cert-badge">
-        </div>
-    </div>
+</div>
+   
 </div>
 {% endblock %}
