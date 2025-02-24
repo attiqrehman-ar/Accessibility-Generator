@@ -6,7 +6,7 @@ import logging
 logging.basicConfig(level=logging.DEBUG)
 
 app = Flask(__name__)
-
+app.secret_key = 'your-secret-key-here'  # Change in production
 
 @app.route('/')
 def home():
