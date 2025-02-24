@@ -1,5 +1,5 @@
 :root {
-    --shopify-blue: #008060;
+    --shopify-blue: #014fa6;
     --shopify-surface: #f6f6f7;
     --shopify-text: #202223;
     --purple: #5c6ac4;
@@ -67,6 +67,11 @@ body {
     width: 100%;
     border-radius: 4px;
 }
+.left-column #step1 {
+    width: 59%;
+    display: flex;
+    align-items: center;
+}
 .app-container {
     display: flex;
     min-height: 100vh;
@@ -110,11 +115,14 @@ body {
 .step-section {
     background-color: white;
     border-radius: 8px;
-    padding: 24px;
+    
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
     margin-bottom: 24px;
 }
-
+.step-header {
+    margin-top: -20px !important;
+    margin-left: 20px;
+}
 .step-content {
     background-color: white;
     padding: 30px;
@@ -124,11 +132,41 @@ body {
 .step-badge {
     background-color: var(--shopify-blue);
     color: white;
-    padding: 4px 12px;
+    padding: 8px 20px;
     border-radius: 4px;
     font-size: 14px;
     display: inline-block;
     margin-bottom: 16px;
+}
+.highlight {
+    background: linear-gradient(287deg, rgba(197, 22, 94, 1) 45%, rgba(87, 33, 126, 1) 65%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    font-weight: bold;
+}
+.language-select {
+    background-color: #ffffff;
+    padding: 10px 15px;
+    border-radius: 8px;
+    box-shadow: 2px 4px 6px rgb(0 0 0 / 10%);
+    align-items: center;
+    font-size: 14px;
+    font-weight: 600;
+    border-bottom: 4px solid #014fa6;
+}
+.img-banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: #002f6c; */
+    background: linear-gradient(287deg, rgba(0, 79, 165, 1) 38%, rgba(2, 34, 94, 1) 58%);
+    color: white;
+    padding: 18px 30px 25px 30px;
+    border-radius: 8px;
+    width: 100%;
+    /* flex-wrap: wrap; */
+    margin: 20px 0;
 }
 
 .text-purple {
