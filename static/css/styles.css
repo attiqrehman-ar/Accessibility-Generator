@@ -5,7 +5,15 @@
     --purple: #5c6ac4;
     --pink: #de3618;
 }
-
+body, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: 'Ubuntu', sans-serif;
+}
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+    margin-bottom: .5rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
 body {
     margin: 0;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
@@ -167,6 +175,47 @@ body {
     width: 100%;
     /* flex-wrap: wrap; */
     margin: 20px 0;
+}
+.banner-content {
+    width: 55%;
+}
+.banner-content h2 {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    width: 100%;
+}
+.banner-content p {
+    width: 95%;
+    background-color: white;
+    color: #01027f;
+    padding: 8px 10px;
+    font-size: 11pt;
+    margin-bottom: 0;
+    font-weight: 500;
+}
+.banner-icons {
+    display: flex;
+    justify-content: center;
+}
+
+.banner-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 5px;
+}
+.banner-icon img {
+    width: 155px;
+    height: auto;
+    border-radius: 50%;
+}
+.compliance-banner {
+    background-color: #002B5C;
+    color: white;
+    padding: 30px 20px;
+    margin: 40px 0;
 }
 
 .text-purple {
@@ -929,11 +978,7 @@ body {
     margin: 40px 0;
 }
 
-.banner-content {
-    max-width: 1200px;
-    margin: 0 auto;
-    text-align: center;
-}
+
 
 .banner-text h2 {
     font-size: 28px;
