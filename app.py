@@ -40,3 +40,7 @@ def generate_statement():
 @app.route('/book-call')
 def book_call():
     return render_template('book-call.html', active_section='book-call')
+
+@app.route('/pricing')
+def pricing():
+    return render_template('pricing.html')
